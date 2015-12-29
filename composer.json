@@ -2,18 +2,18 @@
     "name": "Dakotabox/UserBundle",
     "license": "MARIE-REINE Johann",
     "type": "Symfony Bundle",
-    "description" : "Implement a UserBundle with OauthBundle",
+    "description": "Implement a UserBundle with OauthBundle",
     "keywords": ["User management", "oauth2", "server"],
-    "authors" : [{
-        "name" : "MARIE-REINE",
-        "email" : "johann.marie.reine@gmail.com"
-    }],
+    "authors": [{
+            "name": "MARIE-REINE",
+            "email": "johann.marie.reine@gmail.com"
+        }],
     "autoload": {
-        "psr-0" : {
-            "DB\\UserBundle\\" : ""
+        "psr-0": {
+            "DB\\UserBundle\\": ""
         }
     },
-    "target-dir" : "DB/UserBundle/",
+    "target-dir": "DB/UserBundle/",
     "require": {
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "v1.3.6",
@@ -23,8 +23,9 @@
         "symfony/phpunit-bridge": "~2.7"
     },
     "extra": {
-        "branch-alias" : {
-            "dev-master" : "master-dev"
+        "branch-alias": {
+            "dev-master": "master",
+            "1.0": "1.0"
         }
     }
 }
