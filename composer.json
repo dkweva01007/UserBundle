@@ -9,10 +9,11 @@
         "email" : "johann.marie.reine@gmail.com"
     }],
     "autoload": {
-        "psr-4" : {
+        "psr-0" : {
             "DB\\UserBundle\\" : ""
         }
     },
+    "target-dir" : "DB/UserBundle/",
     "require": {
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "v1.3.6",
