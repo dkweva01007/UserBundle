@@ -9,12 +9,9 @@
         "email" : "johann.marie.reine@gmail.com"
     }],
     "autoload": {
-        "psr-0" : {
-            "DB\\UserBundle" : ""
-        },
-        "files": [
-            "app/AppKernel.php"
-        ]
+        "psr-4" : {
+            "DB\\UserBundle\\" : ""
+        }
     },
     "target-dir" : "DB/UserBundle",
     "require": {
