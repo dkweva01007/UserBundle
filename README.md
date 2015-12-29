@@ -38,7 +38,7 @@ ajouter les paramètres pour la base de donnée du DBUserBundle
 
 [Sécuriser](./Documentation/secur.md).
 
-# Initialisation1
+# Initialisation
 
 [Initialiser](./Documentation/init.md).
 
