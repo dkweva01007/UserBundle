@@ -13,7 +13,6 @@
             "DB\\UserBundle\\" : ""
         }
     },
-    "target-dir" : "DB/UserBundle",
     "require": {
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "v1.3.6",
