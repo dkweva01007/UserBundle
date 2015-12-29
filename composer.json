@@ -1,5 +1,5 @@
 {
-    "name": "DK/UserBundle",
+    "name": "Dakotabox/UserBundle",
     "license": "MARIE-REINE Johann",
     "type": "Symfony Bundle",
     "description" : "Implement a UserBundle with OauthBundle",
