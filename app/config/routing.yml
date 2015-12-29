@@ -1,7 +1,0 @@
-db_user:
-    resource: "@DBUserBundle/Resources/config/routing.yml"
-    prefix:   /
-
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
