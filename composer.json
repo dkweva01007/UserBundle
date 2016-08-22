@@ -1,5 +1,5 @@
 {
-    "name": "capateam/UserBundle",
+    "name": "Dakotabox/UserBundle",
     "license": "MARIE-REINE Johann",
     "type": "Symfony2.8 Bundle",
     "description": "Implement a UserBundle with OauthBundle",
