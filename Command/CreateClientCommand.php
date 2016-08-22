@@ -12,7 +12,7 @@ class CreateClientCommand extends ContainerAwareCommand {
 
     protected function configure() {
         $this
-                ->setName('DB:oauth-server:client:create')
+                ->setName('fos:oauth-server:client:create')
                 ->setDescription('Creates a new client')
                 ->addOption(
                         'redirect-uri', null, InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY, 'Sets redirect uri for client. Use this option multiple times to set multiple redirect URIs.', null
