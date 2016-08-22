@@ -1,11 +1,11 @@
 {
-    "name": "Dakotabox/UserBundle",
+    "name": "capateam/UserBundle",
     "license": "MARIE-REINE Johann",
-    "type": "Symfony Bundle",
+    "type": "Symfony2.8 Bundle",
     "description": "Implement a UserBundle with OauthBundle",
     "keywords": ["User management", "oauth2", "server"],
     "authors": [{
-            "name": "MARIE-REINE",
+            "name": "Johann MARIE-REINE",
             "email": "johann.marie.reine@gmail.com"
         }],
     "autoload": {
@@ -24,7 +24,7 @@
     },
     "extra": {
         "branch-alias" : {
-            "dev-master" : "master", 
+            "dev-master" : "dev-master", 
             "1.0" : "1.0"
         }
     }
