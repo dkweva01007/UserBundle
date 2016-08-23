@@ -69,24 +69,24 @@ class ClientName {
     }
 
     /**
-     * Set web
+     * Set clientId
      *
-     * @param \DB\UserBundle\Entity\Website $web
+     * @param \DB\UserBundle\Entity\ClientId $clientId
      * @return Reservation
      */
-    public function setWeb(\DB\UserBundle\Entity\Website $web = null) {
-        $this->web = $web;
+    public function setClientId(\DB\UserBundle\Entity\ClientId $clientId = null) {
+        $this->clientId = $clientId;
 
         return $this;
     }
 
     /**
-     * Get web
+     * Get clientId
      *
-     * @return \DB\UserBundle\Entity\Website 
+     * @return \DB\UserBundle\Entity\ClientId 
      */
-    public function getWeb() {
-        return $this->web;
+    public function getClientId() {
+        return $this->clientId;
     }
 
 }
