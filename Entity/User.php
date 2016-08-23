@@ -9,7 +9,7 @@ use JMS\Serializer\Annotation\Expose;
 
 /**
  * @ORM\Table(name="user")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="DB\UserBundle\Entity\DefaultRepository")
  */
 class User extends BaseUser
 {

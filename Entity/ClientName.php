@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation\Expose;
 
 /**
  * @ORM\Table(name="client_name")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="DB\UserBundle\Entity\DefaultRepository")
  */
 class ClientName {
 
