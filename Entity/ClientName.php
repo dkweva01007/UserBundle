@@ -7,7 +7,7 @@ use JMS\Serializer\Annotation\ExclusionPolicy;
 use JMS\Serializer\Annotation\Expose;
 
 /**
- * @ORM\Table(name="user")
+ * @ORM\Table(name="client_name")
  * @ORM\Entity
  */
 class ClientName {
@@ -24,7 +24,7 @@ class ClientName {
      *
      * @ORM\ManyToOne(targetEntity="Client")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="cleint_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="client_id", referencedColumnName="id")
      * })
      * @Expose
      */
@@ -74,7 +74,7 @@ class ClientName {
      * @param \DB\UserBundle\Entity\ClientId $clientId
      * @return Reservation
      */
-    public function setClientId(\DB\UserBundle\Entity\ClientId $clientId = null) {
+    public function setClientId(\DB\UserBundle\Entity\Client $clientId = null) {
         $this->clientId = $clientId;
 
         return $this;
