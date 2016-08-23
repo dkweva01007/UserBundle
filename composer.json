@@ -23,9 +23,9 @@
         "symfony/phpunit-bridge": "~2.7"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "master",
-            "1.0": "1.0"
+        "branch-alias" : {
+            "master": "master",
+            "1.0" : "1.0"
         }
     }
 }
