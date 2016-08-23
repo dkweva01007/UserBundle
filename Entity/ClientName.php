@@ -48,24 +48,24 @@ class ClientName {
     }
 
     /**
-     * Set name
+     * Set clientId
      *
-     * @param string $name
+     * @param string $clientId
      * @return Reservation
      */
-    public function setName($name) {
-        $this->name = $name;
+    public function setClientId($clientId) {
+        $this->clientId = $clientId;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get clientId
      *
      * @return string 
      */
-    public function getName() {
-        return $this->name;
+    public function getClientId() {
+        return $this->clientId;
     }
 
     /**
