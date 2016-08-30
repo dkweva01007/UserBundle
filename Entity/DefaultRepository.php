@@ -1,6 +1,6 @@
 <?php
 
-namespace DB\ServiceBundle\Entity;
+namespace DB\UserBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\QueryBuilder;
