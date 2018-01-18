@@ -9,7 +9,7 @@ use JMS\Serializer\Annotation\ExclusionPolicy;
 use JMS\Serializer\Annotation\Expose;
 
 /**
- * @ORM\Table(name="user")
+ * @ORM\Table(name="API_user")
  * @ORM\Entity(repositoryClass="DB\UserBundle\Entity\UserRepository")
  */
 class User extends BaseUser {
