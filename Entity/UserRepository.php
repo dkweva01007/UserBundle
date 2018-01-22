@@ -26,22 +26,10 @@ class UserRepository extends EntityRepository implements UserProviderInterface
                         switch ($key) {
                             case "created":
                             case "updated":
-                            case "dateOrder":
                                 if ($i == 0)
                                     $txt .= 'a.' . $key . ' >= :' . $key . $i;
                                 else
                                     $txt .= ' OR a.' . $key . ' >= :' . $key . $i;
-                                $tmp = \DateTime::createFromFormat('d/m/Y', $value[$i]);
-                                if ($tmp) {
-                                    $value[$i] = $tmp->format('Y-m-d');
-                                }
-                                break;
-                            case "dateEndActivity" :
-                            case "dateBeginActivity" :
-                                if ($i == 0)
-                                    $txt .= 'a.' . $key . ' = :' . $key . $i;
-                                else
-                                    $txt .= ' OR a.' . $key . ' = :' . $key . $i;
                                 $tmp = \DateTime::createFromFormat('d/m/Y', $value[$i]);
                                 if ($tmp) {
                                     $value[$i] = $tmp->format('Y-m-d');
@@ -69,7 +57,6 @@ class UserRepository extends EntityRepository implements UserProviderInterface
                     switch ($key) {
                         case "created":
                         case "updated":
-                        case "dateOrder":
                             $txt .= 'a.' . $key . ' >= :' . $key;
                             $tmp = \DateTime::createFromFormat('d/m/Y', $value);
                             if ($tmp) {
