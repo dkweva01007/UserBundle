@@ -26,7 +26,6 @@ class DefaultRepository extends EntityRepository {
                         switch ($key) {
                             case "created":
                             case "updated":
-                            case "dateOrder":
                                 if ($i == 0)
                                     $txt .= 'a.' . $key . ' >= :' . $key . $i;
                                 else
@@ -36,17 +35,7 @@ class DefaultRepository extends EntityRepository {
                                     $value[$i] = $tmp->format('Y-m-d');
                                 }
                                 break;
-                            case "dateEndActivity" :
-                            case "dateBeginActivity" :
-                                if ($i == 0)
-                                    $txt .= 'a.' . $key . ' = :' . $key . $i;
-                                else
-                                    $txt .= ' OR a.' . $key . ' = :' . $key . $i;
-                                $tmp = \DateTime::createFromFormat('d/m/Y', $value[$i]);
-                                if ($tmp) {
-                                    $value[$i] = $tmp->format('Y-m-d');
-                                }
-                                break;
+                           
                             case (preg_match('/^r_/', $key) ? true : false):
                                 substr($key, 0, 6);
                                 if ($i == 0)
@@ -69,7 +58,6 @@ class DefaultRepository extends EntityRepository {
                     switch ($key) {
                         case "created":
                         case "updated":
-                        case "dateOrder":
                             $txt .= 'a.' . $key . ' >= :' . $key;
                             $tmp = \DateTime::createFromFormat('d/m/Y', $value);
                             if ($tmp) {
